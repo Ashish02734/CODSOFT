@@ -1,0 +1,227 @@
+:root{
+    --dutch-white: #F4E6C4ff;
+    --bronze: #D5883Bff;
+    --rust: #BB4615ff;
+    --hunyadi-yellow: #E6AF4Dff;
+    --smoky-black: #0C0603ff;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham_Narrow_Black/Gotham_Narrow_Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Gotham';
+    margin: 0;
+    padding: 0;
+    background-color: var(--smoky-black);
+    color: var(--dutch-white)
+}
+
+.page-width{
+    width: 85%;
+    margin: auto;
+}
+
+/* Navbar Start */
+
+.navbar {
+    list-style-type: none;
+    background: transparent;
+}
+
+.header-hidden{
+    opacity: 0!important;
+}
+
+.header{
+    background: transparent;
+}
+
+.header-h1 {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.navbar-container {
+    position: fixed;
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+    padding: 20px;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+    background: #0c060396;
+    z-index: 2;
+}
+
+.navbar-btn {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.hidden-navbar {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    width: 0px;
+    padding: 20px 0px;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+    white-space: nowrap;
+    background: #0c060396;
+}
+
+.navbar li {
+    padding: 5px 0px;
+    background: transparent;
+}
+.navbar li a{
+    color: var(--dutch-white);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+}
+
+#cross-svg{
+    display: none;
+}
+
+.burger-svg-container {
+    background: #0c060396;
+    line-height: 0;
+}
+
+/* Navbar End */
+
+/* Hero Section Start */
+
+.hero-section{
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-h1{
+    font-size: 50px;
+}
+
+.hero-image {
+    display: grid;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 250px;
+}
+
+
+/* Hero Section End */
+
+/* Main Content Text Start */
+
+.text-para-h2 {
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.text-para-p {
+    font-size: 18px;
+    color: var(--dutch-white);
+    opacity: 0.4;
+    letter-spacing: 0.1px;
+}
+.text-para,
+.gallery-section {
+    padding: 20px 0px 0px;
+}
+
+/* Main Content Text End */
+
+/* Video Embed Section */
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.video-section iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Video Embed Section End */
+
+/* Gallery Start */
+
+.gallery-item{
+    display: grid;
+    place-items: center;
+}
+
+.gallery-item img{
+    max-width: 100%;
+    margin: 10px;
+    max-height: 250px;
+}
+
+.gallery-inner{
+    margin: 0px 10px;
+}
+.slick-next:before, .slick-prev:before{
+    color: var(--dutch-white);
+}
+
+
+/* Gallery End */
+
+/* Footer Start */
+
+.footer{
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Footer End */
+
+/* Back to top Btn Start */
+
+svg.back-to-top-svg {
+    width: 40px;
+}
+
+.back-to-top {
+    width: max-content;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: transparent;
+    line-height: 0;
+    overflow: hidden;
+}
+
+/* Back to top Btn End */
+
+/* Responsive CSS Start */
+
+@media screen and (max-width: 500px){
+    .hero-section{
+        padding: 20px 0px;
+    }
+
+}
+
+/* Responsive CSS End */
