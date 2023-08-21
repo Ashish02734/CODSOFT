@@ -224,4 +224,10 @@ svg.back-to-top-svg {
 
 }
 
+@media screen and (max-width: 350px){
+    .hero-h1 {
+        font-size: 40px;
+    }
+}
+
 /* Responsive CSS End */
