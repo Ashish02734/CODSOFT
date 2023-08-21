@@ -181,7 +181,10 @@
 .slick-next:before, .slick-prev:before{
     color: var(--dutch-white);
 }
-
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before{
+    color: var(--dutch-white);
+}
 
 /* Gallery End */
 
