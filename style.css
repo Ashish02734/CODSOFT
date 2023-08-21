@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/fonts/Gotham_Narrow_Black/Gotham_Narrow_Black.otf') format('opentype');
+    src: url('Gotham_Narrow_Black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
